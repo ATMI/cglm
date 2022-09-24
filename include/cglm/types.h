@@ -46,8 +46,12 @@ typedef int                    ivec2[2];
 typedef int                    ivec3[3];
 typedef int                    ivec4[4];
 
-// typedef float                   vec2[2];
+#ifdef CGLM_MMX
 typedef float vec2 __attribute__((vector_size (64 / 8)));
+#else
+typedef float                   vec2[2];
+#endif
+
 typedef float                   vec3[3];
 typedef CGLM_ALIGN_IF(16) float vec4[4];
 typedef vec4                    versor;     /* |x, y, z, w| -> w is the last */
