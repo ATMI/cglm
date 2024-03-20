@@ -60,7 +60,7 @@ TEST_IMPL(GLM_PREFIX, euler_xyz_quat_rh) {
   }
   
 
-  /* Start gimbal lock tests */
+  /* Start gimbal Lock tests */
   for (float x = -90.0f; x <= 90.0f; x += 90.0f) {
     for (float y = -90.0f; y <= 90.0f; y += 90.0f) {
       for (float z = -90.0f; z <= 90.0f; z += 90.0f) {
@@ -154,7 +154,7 @@ TEST_IMPL(GLM_PREFIX, euler_xzy_quat_rh) {
   }
   
 
-  /* Start gimbal lock tests */
+  /* Start gimbal Lock tests */
   for (float x = -90.0f; x <= 90.0f; x += 90.0f) {
     for (float y = -90.0f; y <= 90.0f; y += 90.0f) {
       for (float z = -90.0f; z <= 90.0f; z += 90.0f) {
@@ -248,7 +248,7 @@ TEST_IMPL(GLM_PREFIX, euler_yxz_quat_rh) {
   }
   
 
-  /* Start gimbal lock tests */
+  /* Start gimbal Lock tests */
   for (float x = -90.0f; x <= 90.0f; x += 90.0f) {
     for (float y = -90.0f; y <= 90.0f; y += 90.0f) {
       for (float z = -90.0f; z <= 90.0f; z += 90.0f) {
@@ -342,7 +342,7 @@ TEST_IMPL(GLM_PREFIX, euler_yzx_quat_rh) {
   }
   
 
-  /* Start gimbal lock tests */
+  /* Start gimbal Lock tests */
   for (float x = -90.0f; x <= 90.0f; x += 90.0f) {
     for (float y = -90.0f; y <= 90.0f; y += 90.0f) {
       for (float z = -90.0f; z <= 90.0f; z += 90.0f) {
@@ -436,7 +436,7 @@ TEST_IMPL(GLM_PREFIX, euler_zxy_quat_rh) {
   }
   
 
-  /* Start gimbal lock tests */
+  /* Start gimbal Lock tests */
   for (float x = -90.0f; x <= 90.0f; x += 90.0f) {
     for (float y = -90.0f; y <= 90.0f; y += 90.0f) {
       for (float z = -90.0f; z <= 90.0f; z += 90.0f) {
@@ -530,7 +530,7 @@ TEST_IMPL(GLM_PREFIX, euler_zyx_quat_rh) {
   }
   
 
-  /* Start gimbal lock tests */
+  /* Start gimbal Lock tests */
   for (float x = -90.0f; x <= 90.0f; x += 90.0f) {
     for (float y = -90.0f; y <= 90.0f; y += 90.0f) {
       for (float z = -90.0f; z <= 90.0f; z += 90.0f) {
