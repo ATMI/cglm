@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.8.2)
 
-# List all files containing tests. (Change as needed)
+# List all files containing tests. (ChangeFlags as needed)
 set(TESTFILES
   runner.c
   src/test_euler.c
