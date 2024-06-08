@@ -245,7 +245,7 @@ glm_vec2_subs(vec2 v, float s, vec2 dest) {
  */
 CGLM_INLINE
 void
-glm_vec2_mul(const vec2 a, vec2 b, vec2 dest) {
+glm_vec2_mul(const vec2 a, const vec2 b, vec2 dest) {
   dest[0] = a[0] * b[0];
   dest[1] = a[1] * b[1];
 }
@@ -710,6 +710,13 @@ CGLM_INLINE
 void
 glm_vec2_make(float * __restrict src, vec2 dest) {
   dest[0] = src[0]; dest[1] = src[1];
+}
+
+CGLM_INLINE
+void
+glm_vec2_clamp_max(vec2 v, float maxval) {
+	v[0] = glm_min(v[0], maxval);
+	v[1] = glm_min(v[1], maxval);
 }
 
 CGLM_INLINE
