@@ -152,7 +152,7 @@ glm_mat3_zero(mat3 mat) {
  */
 CGLM_INLINE
 void
-glm_mat3_mul(mat3 m1, mat3 m2, mat3 dest) {
+glm_mat3_mul(const mat3 m1, const mat3 m2, mat3 dest) {
 #if defined(__wasm__) && defined(__wasm_simd128__)
   glm_mat3_mul_wasm(m1, m2, dest);
 #elif defined( __SSE__ ) || defined( __SSE2__ )
