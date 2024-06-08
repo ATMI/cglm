@@ -97,7 +97,7 @@ glm_translate2d_y(mat3 m, float y) {
  */
 CGLM_INLINE
 void
-glm_translate2d_make(mat3 m, vec2 v) {
+glm_translate2d_make(mat3 m, const vec2 v) {
   glm_mat3_identity(m);
   m[2][0] = v[0];
   m[2][1] = v[1];
@@ -135,7 +135,7 @@ glm_scale2d_to(mat3 m, vec2 v, mat3 dest) {
  */
 CGLM_INLINE
 void
-glm_scale2d_make(mat3 m, vec2 v) {
+glm_scale2d_make(mat3 m, const vec2 v) {
   glm_mat3_identity(m);
   m[0][0] = v[0];
   m[1][1] = v[1];

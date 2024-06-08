@@ -100,7 +100,7 @@ glm_vec2_eqv(vec2 a, vec2 b) {
  */
 CGLM_INLINE
 bool
-glm_vec2_eqv_eps(vec2 a, vec2 b) {
+glm_vec2_eqv_eps(const vec2 a, const vec2 b) {
   return fabsf(a[0] - b[0]) <= GLM_FLT_EPSILON
          && fabsf(a[1] - b[1]) <= GLM_FLT_EPSILON;
 }
@@ -112,7 +112,7 @@ glm_vec2_eqv_eps(vec2 a, vec2 b) {
  */
 CGLM_INLINE
 float
-glm_vec2_max(vec2 v) {
+glm_vec2_max(const vec2 v) {
   return glm_max(v[0], v[1]);
 }
 
@@ -185,7 +185,7 @@ glm_vec2_sign(vec2 v, vec2 dest) {
  */
 CGLM_INLINE
 void
-glm_vec2_abs(vec2 v, vec2 dest) {
+glm_vec2_abs(const vec2 v, vec2 dest) {
   dest[0] = fabsf(v[0]);
   dest[1] = fabsf(v[1]);
 }

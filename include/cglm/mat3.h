@@ -234,7 +234,7 @@ glm_mat3_transpose(mat3 m) {
  */
 CGLM_INLINE
 void
-glm_mat3_mulv(mat3 m, vec3 v, vec3 dest) {
+glm_mat3_mulv(const mat3 m, const vec3 v, vec3 dest) {
   vec3 res;
   res[0] = m[0][0] * v[0] + m[1][0] * v[1] + m[2][0] * v[2];
   res[1] = m[0][1] * v[0] + m[1][1] * v[1] + m[2][1] * v[2];
@@ -345,7 +345,7 @@ glm_mat3_det(mat3 mat) {
  */
 CGLM_INLINE
 void
-glm_mat3_inv(mat3 mat, mat3 dest) {
+glm_mat3_inv(const mat3 mat, mat3 dest) {
   float det;
   float a = mat[0][0], b = mat[0][1], c = mat[0][2],
         d = mat[1][0], e = mat[1][1], f = mat[1][2],
@@ -448,6 +448,14 @@ glm_mat3_make(float * __restrict src, mat3 dest) {
   dest[2][0] = src[6];
   dest[2][1] = src[7];
   dest[2][2] = src[8];
+}
+
+CGLM_INLINE
+bool
+glm_mat3_eqv_eps(const mat3 a, const mat3 b) {
+  return glm_vec3_eqv_eps(a[0], b[0])
+    && glm_vec3_eqv_eps(a[1], b[1])
+    && glm_vec3_eqv_eps(a[2], b[2]);
 }
 
 #endif /* cglm_mat3_h */

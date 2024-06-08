@@ -88,7 +88,7 @@ glm_ivec2(int * __restrict v, ivec2 dest) {
  */
 CGLM_INLINE
 void
-glm_ivec2_copy(ivec2 a, ivec2 dest) {
+glm_ivec2_copy(const ivec2 a, ivec2 dest) {
   dest[0] = a[0];
   dest[1] = a[1];
 }
@@ -589,7 +589,7 @@ glm_ivec2_eq(ivec2 v, int val) {
  */
 CGLM_INLINE
 bool
-glm_ivec2_eqv(ivec2 a, ivec2 b) {
+glm_ivec2_eqv(const ivec2 a, ivec2 b) {
   return a[0] == b[0]
          && a[1] == b[1];
 }
@@ -654,6 +654,13 @@ void
 glm_ivec2_abs(ivec2 v, ivec2 dest) {
   dest[0] = abs(v[0]);
   dest[1] = abs(v[1]);
+}
+
+CGLM_INLINE
+void
+glm_ivec2_to_vec2(const ivec2 v, vec2 dest) {
+  dest[0] = (float) v[0];
+  dest[1] = (float) v[1];
 }
 
 #endif /* cglm_ivec2_h */

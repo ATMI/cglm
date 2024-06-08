@@ -119,7 +119,7 @@ glm_vec3_eqv(vec3 a, vec3 b) {
  */
 CGLM_INLINE
 bool
-glm_vec3_eqv_eps(vec3 a, vec3 b) {
+glm_vec3_eqv_eps(const vec3 a, const vec3 b) {
   return fabsf(a[0] - b[0]) <= GLM_FLT_EPSILON
          && fabsf(a[1] - b[1]) <= GLM_FLT_EPSILON
          && fabsf(a[2] - b[2]) <= GLM_FLT_EPSILON;
